@@ -1,0 +1,48 @@
+.card { 
+  background: white; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  padding: 20px; 
+  text-align: center; 
+  transition: transform 0.2s; 
+  border: 1px solid #eee; 
+} 
+ 
+.card:hover { 
+  transform: translateY(-5px); /* Karte hebt sich leicht an */ 
+} 
+ 
+.profileImage { 
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%; /* Macht das Bild rund */ 
+  object-fit: cover;  /* Verhindert Verzerren */ 
+  margin-bottom: 15px; 
+  border: 3px solid white; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+} 
+ 
+.name { 
+  font-size: 1.2rem; 
+  margin-bottom: 5px; 
+  color: #2c3e50; 
+} 
+ 
+/* Status Badges */
+.badge { 
+  display: inline-block; 
+  padding: 5px 10px; 
+  border-radius: 15px; 
+  font-size: 0.8rem; 
+  font-weight: bold; 
+} 
+ 
+.active { 
+  background-color: #dcfce7; 
+  color: #166534; /* Grün */ 
+} 
+ 
+.inactive { 
+  background-color: #fee2e2; 
+  color: #991b1b; /* Rot */ 
+}

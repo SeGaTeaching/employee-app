@@ -1,0 +1,17 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  /* Erzeugt so viele Spalten wie passen (min. 250px breit) */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 30px;
+}
