@@ -1,48 +1,67 @@
 .card { 
-  background: white; 
-  border-radius: 12px; 
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-  padding: 20px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  padding: 16px; 
   text-align: center; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  background: white; 
   transition: transform 0.2s; 
-  border: 1px solid #eee; 
 } 
  
 .card:hover { 
-  transform: translateY(-5px); /* Karte hebt sich leicht an */ 
+  transform: translateY(-5px); 
 } 
  
 .profileImage { 
   width: 100px; 
   height: 100px; 
-  border-radius: 50%; /* Macht das Bild rund */ 
-  object-fit: cover;  /* Verhindert Verzerren */ 
-  margin-bottom: 15px; 
-  border: 3px solid white; 
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-bottom: 10px; 
 } 
  
 .name { 
+  margin: 10px 0 5px; 
   font-size: 1.2rem; 
-  margin-bottom: 5px; 
-  color: #2c3e50; 
 } 
  
-/* Status Badges */
 .badge { 
   display: inline-block; 
-  padding: 5px 10px; 
-  border-radius: 15px; 
+  padding: 4px 8px; 
+  border-radius: 12px; 
   font-size: 0.8rem; 
-  font-weight: bold; 
+  color: white; 
 } 
  
-.active { 
-  background-color: #dcfce7; 
-  color: #166534; /* Grün */ 
+.active { background-color: #28a745; } 
+.inactive { background-color: #dc3545; } 
+ 
+.actionButtons { 
+    margin-top: 15px; 
+    display: flex; 
+    gap: 10px; 
+    justify-content: center; 
 } 
  
-.inactive { 
-  background-color: #fee2e2; 
-  color: #991b1b; /* Rot */ 
+.editBtn { 
+    flex: 1; 
+    background: rgba(80, 80, 80, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    padding: 5px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    color: black; 
+} 
+ 
+.deleteBtn { 
+    flex: 1; 
+    background: #dc3545; 
+    color: white; 
+    border: none; 
+    padding: 5px; 
+    border-radius: 4px; 
+    cursor: pointer; 
 }
